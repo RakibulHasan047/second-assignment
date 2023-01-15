@@ -249,15 +249,94 @@
   Mobile Responsive 
   -----------------------*/
   @media only screen and (max-width: 576px) {
-      .copyright-text{
+   /* header and banner responsive */
+   .nav-and-banner{
+      padding: 15px 10px;
+   }
+   .header{
+      flex-direction: column;
+   }
+   .header-menus{
+      flex-direction: column;
+   }
+   .banner{
+      margin: auto;
+   }
+   /* team responsive */
+   .team-member{
+      flex-direction: column;
+      text-align: center;
+      margin: 80px 10px;
+   }
+   .team-photos{
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   /* feature responsive */
+   .features{
+      margin: 50px 10px;
+    }
+   .features-container{
+      flex-direction: column;
+      gap: 30px;
+    }
+    .image img{
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .experience{
+      margin: auto;
+      text-align: center;
+    }
+   /* some fact responsive */
+   .some-fact{
+      margin: 50px 10px;
+    }
+    .box-container{
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+    }
+    .box{
+      animation: none;
+    }
+   /* blog responsive */
+   .blog-section{
+      margin: 40px 10px;
+      text-align: center;
+     }
+     .blogs{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: column;
+     }
+     .blog img{
+      width: 100%;
+      border-radius: 5px;
+     }
+     .blog-title{
+      margin: 15px 0;
+     }
+
+   /* sponsor responsive */
+   .sponsor-contain{
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+   }
+   .sponsor-images{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }  
+
+    /* copyright responsive */
+   .copyright-text{
          width: 100%;
          margin: 10px;
          padding: 10px 20px;
-      }
-
-
-
-      .nav-and-banner, .team-member, .features, .some-fact, .blog-section, .sponsor{
-         display: none;
       }
   }
